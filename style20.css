@@ -419,10 +419,10 @@ font-weight: bold;
 
 @media screen and (max-width: 480px){
     .swiper-button-prev{
-        left: 2;
+        left: -10px;
     }
     .swiper-button-next{
-        right: 2;
+        right: -10px;
     }
     .swiper-slide img{
         width: 300px;
