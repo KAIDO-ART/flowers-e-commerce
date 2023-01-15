@@ -487,6 +487,15 @@ width: 90%;
         margin: 10px;
     }
 }
+@media screen and (max-width: 380px){
+     .swiper-slide img{
+        width: 280px;
+        height: 320px;
+    }
+    .content-swipe h2{
+    font-size: 25px;
+    }
+}
 
 @media screen and (max-width: 770px){
     nav .menu{
