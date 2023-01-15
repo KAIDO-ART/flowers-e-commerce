@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: 100%;
+     /* position: fixed;
+    /* top: 0;
+    left:0%; */
+    /* z-index: 1000;  */
+}
+.nav-content{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    padding: 18px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* position: relative; */
+
+}
+.logo img{
+    cursor: pointer;
+}
+.menu{
+display: flex;
+justify-content: space-between;
+
+
+}
+.menu a{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+.contact p{
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+}
+.contact a{
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+.login{
+    width: 100%;
+    height: 100vh;
+    background: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.maincon{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+.first-con{
+    width: 500px;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+  
+   padding-left: 50px;
+   padding-right: 50px;
+}
+.first-con img{
+    width: 300px;
+}
+.second-con{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15%;
+}
+.login-box{
+    width: 320px;
+    height: 420px;
+    background: black;
+    color: yellowgreen;
+    /* left: 50%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+    position: absolute; */
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 50px 30px;
+   
+}
+h1{
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    color: white;
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 25px;
+
+}
+.login-box input[type="text"], input[type="password"]{
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    outline: none;
+    height: 40px;
+    color: white;
+
+}
+.login-box button{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: white;
+    border-radius: 10px;
+    font-size: 15px;
+    color: black;
+    padding: 10px;
+    width: 100%;
+ transition: 0.5s;
+ margin-bottom: 10px;
+
+}
+.login-box button:hover{
+    cursor: pointer;
+    background: yellowgreen;
+    color: black;
+}
+.login-box a{
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 20px;
+    color: darkgray;
+  
+    transition: all 0.5s;
+}
+.login-box a:hover{
+    color: black;
+}
+.nav-openbtn{
+    display: none;
+}
+.nav-closebtn{
+    display: none;
+}
+
+@media screen and (max-width: 480px){
+.maincon{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.maincon .first-con{
+display: none !important;
+
+}
+.second-con{
+    width: 350px;
+    align-items: center;
+    margin: 0;
+}
+}
+@media screen and (max-width: 770px){
+nav .menu{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    max-width: 300px;
+    width: 100%;
+    box-shadow: 0 0 10px lightslategray;
+    height: 100%;
+    padding: 10rem;
+    z-index: var(--z-fixed);
+    background-color: antiquewhite;
+transition: var(--trans-0-5) ease-in-out;
+}
+nav .menu a{
+    font-size: 22px;
+}
+.nav-closebtn,
+.nav-openbtn{
+    display: block;
+}
+nav .menu.open{
+    right: 0;
+    
+  
+}
+.menu{
+    flex-direction: column;
+    align-items: center;
+}
+.menu a{
+    color: black;
+}
+.contact{
+    display: none;
+}
+.nav-closebtn{
+position: absolute;
+top: 2rem;
+right: 2rem;
+font-size: 2.5rem;
+cursor: pointer;
+color: black;
+}
+.nav-openbtn{
+font-size: 2.5rem;
+cursor: pointer;
+color: white;
+}
+}
